@@ -477,3 +477,91 @@ html {
   animation: rotate 20s linear infinite;
   pointer-events: none;
 }
+
+.tradition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tradition-item {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid #d4af37;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.tradition-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(196, 30, 58, 0.25);
+  border-color: #c41e3a;
+}
+
+.tradition-media {
+  height: 200px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.tradition-media video,
+.tradition-media audio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tradition-item.audio .tradition-media {
+  background: linear-gradient(135deg, #c41e3a, #8b1228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tradition-item h4 {
+  margin: 20px 15px 10px;
+  color: #c41e3a;
+  font-size: 20px;
+}
+
+.tradition-item p {
+  margin: 0 15px 20px;
+  color: #555;
+  font-size: 15px;
+}
+
+.watch-btn,
+.play-btn {
+  margin: 0 15px 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.watch-btn {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+.watch-btn:hover {
+  background: #c41e3a;
+  color: white;
+  transform: scale(1.05);
+}
+
+.play-btn {
+  background: #8b1228;
+  color: white;
+}
+
+.play-btn:hover {
+  background: #d4af37;
+  color: #1a1a1a;
+}

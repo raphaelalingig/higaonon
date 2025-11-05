@@ -83,36 +83,115 @@
           <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about Sailang traditions, their cultural significance, and role in Higaonon ceremonies and celebrations.</p>
         </div>
 
-        <div class="content-grid">
-          <div class="card">
-            <div class="card-icon">💃</div>
-            <h4>Traditional Dances</h4>
-            <p><strong>[PLACEHOLDER]</strong> Descriptions of specific Higaonon dances, their movements, meanings, and occasions when they are performed.</p>
+        <div class="tradition-grid">
+          <!-- Video 1 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Binanog.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <h4>Binanog</h4>
+            <p>[PLACEHOLDER] Binanog description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Binanog.mp4', 'Binanog')">Watch Full Video</button>
           </div>
-          <div class="card">
-            <div class="card-icon">🎵</div>
-            <h4>Sacred Songs</h4>
-            <p><strong>[PLACEHOLDER]</strong> Information about traditional Higaonon songs, their lyrics, melodies, and cultural importance.</p>
+
+          <!-- Video 2 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Binanog (2).mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Binanogv2</h4>
+            <p>[PLACEHOLDER] Binanogv2 description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Binanog (2).mp4', 'Binanogv2')">Watch Full Video</button>
           </div>
-          <div class="card">
-            <div class="card-icon">🎭</div>
-            <h4>Ceremonies</h4>
-            <p><strong>[PLACEHOLDER]</strong> Details about rituals and ceremonies where Sailang is performed, including weddings, harvests, and spiritual gatherings.</p>
+
+          <!-- Video 3 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Pugas.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Pugas</h4>
+            <p>[PLACEHOLDER] description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Pugas.mp4', 'Pugas')">Watch Full Video</button>
           </div>
-          <div class="card">
-            <div class="card-icon">🎸</div>
-            <h4>Instruments</h4>
-            <p><strong>[PLACEHOLDER]</strong> Description of traditional musical instruments used in Sailang performances.</p>
+
+          <!-- Video 4 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Duwaya.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Duwaya</h4>
+            <p>[PLACEHOLDER] description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Duwaya.mp4', 'Duwaya')">Watch Full Video</button>
           </div>
-          <div class="card">
-            <div class="card-icon">👗</div>
-            <h4>Traditional Attire</h4>
-            <p><strong>[PLACEHOLDER]</strong> Information about the colorful traditional clothing worn during performances, including the red, yellow, and black garments.</p>
+
+          <!-- Video 5 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Tagmalaki.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Tagmalaki</h4>
+            <p>[PLACEHOLDER] description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Tagmalaki.mp4', 'Tagmalaki')">Watch Full Video</button>
           </div>
-          <div class="card">
-            <div class="card-icon">📚</div>
-            <h4>Preservation</h4>
-            <p><strong>[PLACEHOLDER]</strong> Efforts and initiatives to preserve and pass down Sailang traditions to future generations.</p>
+
+          <!-- Video 5 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="/media/Panaghiusa.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Panaghiusa</h4>
+            <p>[PLACEHOLDER] description</p>
+            <button class="watch-btn" onclick="openVideoModal('/media/Panaghiusa.mp4', 'Panaghiusa')">Watch Full Video</button>
+          </div>
+
+          <!-- Song 1 -->
+          <div class="tradition-item audio">
+            <div class="tradition-media">
+              <audio controls>
+                <source src="/media/Dalinday Sa Binukid.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <h4>Dalinday Sa Binukid"</h4>
+            <p>[PLACEHOLDER] Dalinday Sa Binukid description</p>
+            <button class="play-btn">Play Song</button>
+          </div>
+
+          <!-- Song 2 -->
+          <div class="tradition-item audio">
+            <div class="tradition-media">
+              <audio controls>
+                <source src="/media/Asom.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <h4>Asom</h4>
+            <p>[PLACEHOLDER] description</p>
+            <button class="play-btn">Play Song</button>
+          </div>
+
+          <!-- Song 3 -->
+          <div class="tradition-item audio">
+            <div class="tradition-media">
+              <audio controls>
+                <source src="/media/song-higaonon-3.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <h4>Sacred Song - "Taguk"</h4>
+            <p>A song of strength and resilience passed down through generations.</p>
+            <button class="play-btn">Play Song</button>
           </div>
         </div>
       </section>
@@ -176,7 +255,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2024 Higaonon Tribe Cultural Heritage Project</p>
+      <p>&copy; 2025 Higaonon Tribe Cultural Heritage Project</p>
       <p>Preserving tradition, celebrating culture</p>
       <div class="footer-links">
         <a href="#home">Home</a>
@@ -185,104 +264,8 @@
         <a href="#acknowledgement">Acknowledgement</a>
         <a href="#contact">Contact</a>
       </div>
-      <p style="margin-top: 20px; font-size: 14px; color: #999"><strong>Note:</strong> This website contains placeholder content. Please replace with actual information about the Higaonon tribe.</p>
     </footer>
 
-    <script>
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-
-      // Add active state to navigation based on scroll position
-      window.addEventListener("scroll", () => {
-        const sections = document.querySelectorAll(".section, .hero");
-        const navLinks = document.querySelectorAll("nav a");
-
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (scrollY >= sectionTop - 100) {
-            current = section.getAttribute("id");
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.style.background = "rgba(255,255,255,0.1)";
-          link.style.borderColor = "transparent";
-          if (link.getAttribute("href") === `#${current}`) {
-            link.style.background = "#d4af37";
-            link.style.color = "#1a1a1a";
-            link.style.borderColor = "#1a1a1a";
-          }
-        });
-      });
-
-      // Add entrance animation to cards
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "0";
-            entry.target.style.transform = "translateY(20px)";
-            setTimeout(() => {
-              entry.target.style.transition = "all 0.6s ease";
-              entry.target.style.opacity = "1";
-              entry.target.style.transform = "translateY(0)";
-            }, 100);
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".card").forEach((card) => {
-        observer.observe(card);
-      });
-
-      // Video Modal Functions
-      function closeVideo() {
-        const modal = document.getElementById("videoModal");
-        const video = modal.querySelector("video");
-
-        if (video) {
-          video.pause();
-          video.currentTime = 0; // optional: reset to start
-        }
-
-        modal.classList.add("hidden");
-        document.body.style.overflow = "auto";
-        document.body.style.pointerEvents = "auto";
-      }
-      function showVideo() {
-        const modal = document.getElementById("videoModal");
-        modal.classList.remove("hidden");
-        document.body.style.overflow = "hidden";
-        document.body.style.pointerEvents = "none"; // Block interaction
-        modal.style.pointerEvents = "auto"; // Allow modal interaction
-      }
-
-      // Show video on page load
-      window.addEventListener("load", () => {
-        showVideo();
-      });
-
-      // Flip card function
-      function flipCard(card) {
-        card.classList.toggle("flipped");
-      }
-    </script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
