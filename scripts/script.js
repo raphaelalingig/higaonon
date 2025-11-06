@@ -194,3 +194,18 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlide(slideIndex);
   autoPlaySlides();
 });
+
+function toggleReadMore(button) {
+  const card = button.parentElement;
+  const textContainer = card.querySelector(".about-card-text");
+
+  if (textContainer.classList.contains("collapsed")) {
+    textContainer.classList.remove("collapsed");
+    textContainer.classList.add("expanded");
+    button.textContent = "Read less";
+  } else {
+    textContainer.classList.add("collapsed");
+    textContainer.classList.remove("expanded");
+    button.textContent = "Read more";
+  }
+}
