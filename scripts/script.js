@@ -137,3 +137,60 @@ document.querySelectorAll(".play-btn").forEach((btn) => {
 function flipCard(card) {
   card.classList.toggle("flipped");
 }
+
+let slideIndex = 1;
+let slideTimer;
+
+// Auto-play slideshow
+function autoPlaySlides() {
+  slideTimer = setInterval(() => {
+    changeSlide(1);
+  }, 5000); // Change slide every 5 seconds
+}
+
+// Change slide
+function changeSlide(n) {
+  clearInterval(slideTimer); // Stop auto-play when manually navigating
+  showSlide((slideIndex += n));
+  autoPlaySlides(); // Restart auto-play
+}
+
+// Go to specific slide
+function currentSlide(n) {
+  clearInterval(slideTimer);
+  showSlide((slideIndex = n));
+  autoPlaySlides();
+}
+
+// Show slide
+function showSlide(n) {
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Hide all slides
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+
+  // Remove active from all dots
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+
+  // Show current slide
+  slides[slideIndex - 1].classList.add("active");
+  dots[slideIndex - 1].classList.add("active");
+}
+
+// Start slideshow when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(slideIndex);
+  autoPlaySlides();
+});

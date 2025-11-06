@@ -43,12 +43,41 @@
       <section id="home" class="hero">
         <h2>Welcome to Higaonon Heritage</h2>
         <p>Discover the rich cultural traditions of the Higaonon people through their sacred Sailang dances and songs from the mountainous regions of North-Central Mindanao</p>
+        <button class="watch-btn" onclick="showVideo()">Watch Introduction Video</button>
       </section>
 
       <div class="flow-line"></div>
 
       <section id="about" class="section">
         <h3>About the Higaonon Tribe</h3>
+
+        <!-- Image Slideshow -->
+        <div class="slideshow-container">
+          <div class="slide fade active">
+            <img src="/media/Image2.png" alt="Higaonon Culture" />
+            <div class="slide-caption">Traditional Higaonon Community</div>
+          </div>
+          <div class="slide fade">
+            <img src="/media/Image2.png" alt="Higaonon Landscape" />
+            <div class="slide-caption">The Mountains of North-Central Mindanao</div>
+          </div>
+          <div class="slide fade">
+            <img src="/media/Image2.png" alt="Higaonon Heritage" />
+            <div class="slide-caption">Preserving Our Rich Heritage</div>
+          </div>
+
+          <!-- Navigation arrows -->
+          <button class="slide-prev" onclick="changeSlide(-1)">❮</button>
+          <button class="slide-next" onclick="changeSlide(1)">❯</button>
+
+          <!-- Dots indicator -->
+          <div class="slide-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
         <div class="placeholder-content">
           <p>
             <strong>CONTENT PLACEHOLDER:</strong> Insert comprehensive information about the Higaonon people here, including their history, geographical location, population, language, and cultural
@@ -78,9 +107,9 @@
       <div class="flow-line"></div>
 
       <section id="tradition" class="section">
-        <h3>Songs and Dances</h3>
+        <h3>Traditional Dances</h3>
         <div class="placeholder-content">
-          <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about Sailang traditions, their cultural significance, and role in Higaonon ceremonies and celebrations.</p>
+          <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about traditional Higaonon dances, their cultural significance, and role in ceremonies and celebrations.</p>
         </div>
 
         <div class="tradition-grid">
@@ -145,7 +174,7 @@
             <button class="watch-btn" onclick="openVideoModal('/media/Tagmalaki.mp4', 'Tagmalaki')">Watch Full Video</button>
           </div>
 
-          <!-- Video 5 -->
+          <!-- Video 6 -->
           <div class="tradition-item">
             <div class="tradition-media">
               <video controls>
@@ -156,42 +185,56 @@
             <p>[PLACEHOLDER] description</p>
             <button class="watch-btn" onclick="openVideoModal('/media/Panaghiusa.mp4', 'Panaghiusa')">Watch Full Video</button>
           </div>
+        </div>
+      </section>
 
+      <div class="flow-line"></div>
+
+      <section id="songs" class="section">
+        <h3>Traditional Songs</h3>
+        <div class="placeholder-content">
+          <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about traditional Higaonon songs, their meanings, and cultural importance.</p>
+        </div>
+
+        <div class="tradition-grid songs-grid">
           <!-- Song 1 -->
           <div class="tradition-item audio">
-            <div class="tradition-media">
-              <audio controls>
+            <div class="tradition-media audio-player">
+              <div class="audio-icon">♪</div>
+              <audio id="audio-1" controls>
                 <source src="/media/Dalinday Sa Binukid.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
             </div>
-            <h4>Dalinday Sa Binukid"</h4>
+            <h4>Dalinday Sa Binukid</h4>
             <p>[PLACEHOLDER] Dalinday Sa Binukid description</p>
-            <button class="play-btn">Play Song</button>
+            <button class="play-btn" onclick="toggleAudio('audio-1', this)"><span class="btn-icon">▶</span> Play Song</button>
           </div>
 
           <!-- Song 2 -->
           <div class="tradition-item audio">
-            <div class="tradition-media">
-              <audio controls>
+            <div class="tradition-media audio-player">
+              <div class="audio-icon">♪</div>
+              <audio id="audio-2" controls>
                 <source src="/media/Asom.mp3" type="audio/mpeg" />
               </audio>
             </div>
             <h4>Asom</h4>
             <p>[PLACEHOLDER] description</p>
-            <button class="play-btn">Play Song</button>
+            <button class="play-btn" onclick="toggleAudio('audio-2', this)"><span class="btn-icon">▶</span> Play Song</button>
           </div>
 
           <!-- Song 3 -->
           <div class="tradition-item audio">
-            <div class="tradition-media">
-              <audio controls>
+            <div class="tradition-media audio-player">
+              <div class="audio-icon">♪</div>
+              <audio id="audio-3" controls>
                 <source src="/media/song-higaonon-3.mp3" type="audio/mpeg" />
               </audio>
             </div>
             <h4>Sacred Song - "Taguk"</h4>
             <p>A song of strength and resilience passed down through generations.</p>
-            <button class="play-btn">Play Song</button>
+            <button class="play-btn" onclick="toggleAudio('audio-3', this)"><span class="btn-icon">▶</span> Play Song</button>
           </div>
         </div>
       </section>
