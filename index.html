@@ -79,10 +79,15 @@
         </div>
 
         <div class="placeholder-content">
-          <p>
-            <strong>CONTENT PLACEHOLDER:</strong> Insert comprehensive information about the Higaonon people here, including their history, geographical location, population, language, and cultural
-            significance in Mindanao.
-          </p>
+          <div class="about-card-text collapsed">
+            <p>
+              <strong>Want to know more about the Higaonon Tribe?</strong> The Higaonon (also Higa-unon or Higaonon) are one of the indigenous Lumad peoples of northern and central Mindanao,
+              Philippines, known as "people of the living mountains" or "people of the wilderness" from Binukid words higa (living), goan (mountains), and onon (people). They inhabit highlands across
+              Misamis Oriental (including Cagayan de Oro's Tablon/Baloy and Nahilaran/Dansolihon ancestral domains), Bukidnon, Agusan del Sur/Norte, Lanao del Norte, and Camiguin, with populations
+              estimated at 100,000+ in Misamis Oriental-CDO areas alone.
+            </p>
+          </div>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
         </div>
 
         <div class="content-grid">
@@ -132,36 +137,13 @@
       <section id="tradition" class="section">
         <h3>Traditional Dances</h3>
         <div class="placeholder-content">
-          <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about traditional Higaonon dances, their cultural significance, and role in ceremonies and celebrations.</p>
+          <p>
+            <strong>Dances from Nahilaran:</strong> Preservation-focused dances including Dugso (spiritual stomping/jumping for thanksgiving), Binaylan (shaman-led handkerchief waves evading hawk),
+            and Anahaw (prayerful fan-like arm waves). Taught weekly to youth; featured in rituals and school festivals with beadwork, anklets, and symbolic colors (white for purity).
+          </p>
         </div>
 
         <div class="tradition-grid">
-          <!-- Video 1 -->
-          <div class="tradition-item">
-            <div class="tradition-media">
-              <video controls>
-                <source src="media/Binanog.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <h4>Binanog</h4>
-            <p>[PLACEHOLDER] Binanog description</p>
-            <button class="watch-btn" onclick="openVideoModal('media/Binanog.mp4', 'Binanog')">Watch Full Video</button>
-          </div>
-
-          <!-- Video 2 -->
-          <div class="tradition-item">
-            <div class="tradition-media">
-              <video controls>
-                <source src="media/Binanog (2).mp4" type="video/mp4" />
-              </video>
-            </div>
-            <h4>Binanogv2</h4>
-            <p>[PLACEHOLDER] Binanogv2 description</p>
-            <button class="watch-btn" onclick="openVideoModal('media/Binanog (2).mp4', 'Binanogv2')">Watch Full Video</button>
-          </div>
-
-          <!-- Video 3 -->
           <div class="tradition-item">
             <div class="tradition-media">
               <video controls>
@@ -169,10 +151,11 @@
               </video>
             </div>
             <h4>Pugas</h4>
-            <p>[PLACEHOLDER] description</p>
-            <button class="watch-btn" onclick="openVideoModal('media/Pugas.mp4', 'Pugas')">Watch Full Video</button>
+            <p>
+              A cleansing or rice-related ritual dance (from "pugas" meaning husked rice), involving offering gestures and stomping to symbolize purification and thanksgiving for harvest abundance.
+            </p>
+            <button class="introductionVideo watch-btn" onclick="openVideoModal('media/Pugas.mp4', 'Pugas')">Watch Full Video</button>
           </div>
-
           <!-- Video 4 -->
           <div class="tradition-item">
             <div class="tradition-media">
@@ -181,11 +164,13 @@
               </video>
             </div>
             <h4>Duwaya</h4>
-            <p>[PLACEHOLDER] description</p>
+            <p>
+              An imitative or courtship dance mimicking gentle movements (possibly bird or nature-inspired), performed in pairs or groups with flowing arm waves and handkerchief props for
+              entertainment during gatherings.
+            </p>
             <button class="watch-btn" onclick="openVideoModal('media/Duwaya.mp4', 'Duwaya')">Watch Full Video</button>
           </div>
 
-          <!-- Video 5 -->
           <div class="tradition-item">
             <div class="tradition-media">
               <video controls>
@@ -193,7 +178,10 @@
               </video>
             </div>
             <h4>Tagmalaki</h4>
-            <p>[PLACEHOLDER] description</p>
+            <p>
+              A warrior or "big man" dance honoring brave leaders (bagani), featuring strong, aggressive steps with shields/spears, red attire for bravery, and gong rhythms to depict strength and
+              protection of the tribe.
+            </p>
             <button class="watch-btn" onclick="openVideoModal('media/Tagmalaki.mp4', 'Tagmalaki')">Watch Full Video</button>
           </div>
 
@@ -205,9 +193,50 @@
               </video>
             </div>
             <h4>Panaghiusa</h4>
-            <p>[PLACEHOLDER] description</p>
+            <p>
+              A unity dance (from "panaghiusa" meaning oneness), performed in large circles with hand-holding formations symbolizing tribal harmony, community bonds, and peace pacts; often closes
+              rituals with synchronized stomps and anklet sounds.
+            </p>
             <button class="watch-btn" onclick="openVideoModal('media/Panaghiusa.mp4', 'Panaghiusa')">Watch Full Video</button>
           </div>
+        </div>
+        <div class="placeholder-content">
+          <p>
+            <strong>Dances from Tablon:</strong> Ritual and social dances like Dinugso (women stomping in circles around fire for healing, no music), Saut (warriors with shields/spears in aggressive
+            strikes), and Binanog (hawk imitation gliding/chasing). Performed in initiations, birthdays, and Higalaay street dancing with gongs, red attire, and group unity formations.
+          </p>
+        </div>
+
+        <div class="tradition-grid">
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="media/Binanog.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <h4>Binanog</h4>
+            <!-- <p>[PLACEHOLDER] Binanog description</p> -->
+            <button class="watch-btn" onclick="openVideoModal('media/Binanog.mp4', 'Binanog')">Watch Full Video</button>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="tradition-item">
+            <div class="tradition-media">
+              <video controls>
+                <source src="media/Binanog (2).mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Binanogv2</h4>
+            <!-- <p>[PLACEHOLDER] Binanogv2 description</p> -->
+            <button class="watch-btn" onclick="openVideoModal('media/Binanog (2).mp4', 'Binanogv2')">Watch Full Video</button>
+          </div>
+        </div>
+        <div class="placeholder-content">
+          <p>
+            <strong>Binanog:</strong> Binanog (or Binanog Banog) is an entertaining imitative dance performed by the Higaonon in Tablon, mimicking the banog (hawk) in flight, gliding, swooping,
+            courting, or hunting/chasing prey. Often depicts a male hawk pursuing a female, or a hawk chasing a hen protecting chicks.
+          </p>
         </div>
       </section>
 
@@ -216,7 +245,11 @@
       <section id="songs" class="section">
         <h3>Traditional Songs</h3>
         <div class="placeholder-content">
-          <p><strong>CONTENT PLACEHOLDER:</strong> Insert detailed information about traditional Higaonon songs, their meanings, and cultural importance.</p>
+          <p>
+            <strong>Summary: </strong> Both are authentic Higaonon oral traditions in Binukid from northern Mindanao (including CDO areas), blending poetry and melody without instruments—Dalinday
+            celebrates mountain identity and joy in nature, while Asom conveys romantic grief and vulnerability. Sung in rituals, festivals, or youth training to honor emotions, unity, and Lumad
+            cosmology; they highlight verbal arts like limbay/kaliga-on, passed down to resist cultural erosion.
+          </p>
         </div>
 
         <div class="tradition-grid songs-grid">
@@ -230,7 +263,11 @@
               </audio>
             </div>
             <h4>Dalinday Sa Binukid</h4>
-            <p>[PLACEHOLDER] Dalinday Sa Binukid description</p>
+            <p>
+              A traditional Higaonon limbay (lyric folk poem/song) in Binukid language, often sung as a melancholic ballad expressing love for the mountains ("sa binukid" meaning "in the highlands").
+              It evokes nostalgia for ancestral lands, nature's beauty, and simple mountain life; performed during rituals, gatherings, or storytelling in communities like Tablon/Nahilaran to preserve
+              oral heritage.
+            </p>
             <button class="play-btn" onclick="toggleAudio('audio-1', this)"><span class="btn-icon">▶</span> Play Song</button>
           </div>
 
@@ -243,21 +280,11 @@
               </audio>
             </div>
             <h4>Asom</h4>
-            <p>[PLACEHOLDER] description</p>
+            <p>
+              A kaliga-on ceremonial song in Binukid, typically part of the "Song of the Rejected Lover" genre. "Asom" refers to sorrow, longing, or heartache (e.g., "anlo asom" meaning deep sadness);
+              archaic lyrics depict unrequited love, rejection, and emotional pain, sung by baylan (shamans) and groups during healing rituals or poetic discourses for spiritual catharsis.
+            </p>
             <button class="play-btn" onclick="toggleAudio('audio-2', this)"><span class="btn-icon">▶</span> Play Song</button>
-          </div>
-
-          <!-- Song 3 -->
-          <div class="tradition-item audio">
-            <div class="tradition-media audio-player">
-              <div class="audio-icon">♪</div>
-              <audio id="audio-3" controls>
-                <source src="media/song-higaonon-3.mp3" type="audio/mpeg" />
-              </audio>
-            </div>
-            <h4>Sacred Song - "Taguk"</h4>
-            <p>A song of strength and resilience passed down through generations.</p>
-            <button class="play-btn" onclick="toggleAudio('audio-3', this)"><span class="btn-icon">▶</span> Play Song</button>
           </div>
         </div>
       </section>
@@ -274,17 +301,26 @@
           <div class="card">
             <div class="card-icon">👨‍🔬</div>
             <h4>Research Team</h4>
-            <p><strong>[PLACEHOLDER]</strong> List of researchers and their roles in documenting Higaonon culture.</p>
+            <div class="about-card-text collapsed">
+              <p><strong>[PLACEHOLDER]</strong> description of acknowledgement</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
           </div>
           <div class="card">
             <div class="card-icon">🤝</div>
             <h4>Contributors</h4>
-            <p><strong>[PLACEHOLDER]</strong> Names and contributions of team members who helped create this website.</p>
+            <div class="about-card-text collapsed">
+              <p><strong>[PLACEHOLDER]</strong> description of acknowledgement</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
           </div>
           <div class="card">
             <div class="card-icon">👴</div>
             <h4>Community Elders</h4>
-            <p><strong>[PLACEHOLDER]</strong> Recognition of Higaonon elders who shared their knowledge and wisdom.</p>
+            <div class="about-card-text collapsed">
+              <p><strong>[PLACEHOLDER]</strong> description of acknowledgement</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
           </div>
         </div>
       </section>
